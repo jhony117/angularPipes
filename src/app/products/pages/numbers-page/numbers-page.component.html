@@ -1,0 +1,34 @@
+<p>numbers-page works!</p>
+
+<p-panel  header="pipes basicos/numericos" class="p-2">
+  <p>
+    pipes incluidos en angualr - usualmente en common module
+  </p>
+
+</p-panel>
+
+
+<div class="grid mt-2">
+
+<div class="col-12 md:col-4">
+  <p-card header="Ventas Netas" subheader="del presente año">
+    {{(totalSells + 1235) | number:'1.2-2'}}
+  </p-card>
+</div>
+<div class="col-12 md:col-4">
+  <p-card header="Ventas brutas" subheader="del presente año">
+  {{percent | percent: '1.2-2' }}
+   
+    {{totalSells | currency:'MXN':'symbol-narrow':'1.4-4'}}
+  </p-card>
+</div>
+<div class="col-12 md:col-4">
+  <p-card header="ganancia porcentual" subheader="del presente año">
+  {{percent | percent: '1.2-2' }}
+    
+  </p-card>
+</div>
+ 
+
+
+</div>
